@@ -14,6 +14,7 @@ get '/eds' do
 end
 
 get '/trophy' do
+  @name_sample = ["Ed","Iain", "Jessie"].sample
   erb(:index)
 end
  
