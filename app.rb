@@ -14,9 +14,7 @@ get '/eds' do
 end
 
 get '/trophy' do
-  "<div style='border: 3px dashed red'>
-     <img src='https://i.redd.it/v35cg8cr6i521.jpg'>
-   </div>"
+  erb(:index)
 end
  
 
