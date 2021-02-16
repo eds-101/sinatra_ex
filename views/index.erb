@@ -1,5 +1,13 @@
+<% if @name %>
+<h1> My name is <%= @name %></h1>
+<% end %>
 
-<h1> My name is <%= @name_sample %></h1>
+<form action="/named-cat">
+<input type="text" name="name">
+<input type="submit" value="Submit">
+
+</form>
+
 <div style='border: 3px dashed red'>
-<img src='https://ichef.bbci.co.uk/live-experience/cps/624/cpsprodpb/vivo/live/images/2021/2/15/b5cd1217-9657-4ce5-b8ab-96f389a2fcc1.png'>
+<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/British_blue_close_up.jpg/220px-British_blue_close_up.jpg'>
 </div>

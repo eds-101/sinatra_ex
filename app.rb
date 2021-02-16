@@ -13,11 +13,16 @@ get '/eds' do
   "Big Eds is here"
 end
 
-get '/trophy' do
-  @name_sample = ["Ed","Iain", "Jessie"].sample
+get '/randomcat' do
+  @name = ["Ed","Iain", "Jessie"].sample
   erb(:index)
 end
  
+get '/named-cat' do
+  p params
+  @name = params[:name]
+  erb(:index)
+end
 
 get '/games' do
   "No time for games."
